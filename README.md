@@ -1,16 +1,43 @@
-# React + Vite
+# 🚀 Kuldeep Patidar — Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A minimal, fast, and modern developer portfolio built with **React** and **Tailwind CSS**. Designed with modular components, a clean typography hierarchy, and a responsive layout to showcase projects, experience, and contact links.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+- **📱 Fully Responsive**: Optimized for desktop, tablet, and mobile displays.
+- **🧩 Component-Driven Architecture**: Modular directory structure (`Navbar`, `Hero`, `Experience`, `Projects`, `Footer`).
+- **💼 Data-Driven Layout**: Separated data arrays (`portfolioData.js`) for seamless updates to projects and work history.
+- **📋 Interactive One-Click Clipboard**: Instant email address copy-to-clipboard with fallback support for email clients.
+- **🎨 Tailwind Styling**: Utility-first CSS using slate color palettes and typography tokens.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Framework**: React.js
+- **Styling**: Tailwind CSS
+- **Icons / Assets**: Lucide React 
+- **Deployment**: Vercel
+
+---
+
+## 📁 Directory Structure
+
+```text
+src/
+├── data/
+│   └── portfolioData.js     # Data source for projects & experience
+├── components/
+│   ├── Navbar.jsx           # Top navigation bar & dark mode toggle
+│   ├── Hero.jsx             # Hero section with bio & resume CTA
+│   ├── Experience.jsx       # Work history wrapper
+│   ├── ExperienceCard.jsx   # Individual job card component
+│   ├── Projects.jsx         # Portfolio projects wrapper
+│   ├── ProjectCard.jsx      # Individual project card component
+│   └── Footer.jsx           # Interactive contact & social links
+├── App.jsx                  # Main root application assembly
+├── main.jsx                 # React entry point
+└── index.css                # Global styles & Tailwind imports
+
