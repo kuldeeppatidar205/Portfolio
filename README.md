@@ -18,7 +18,7 @@ A minimal, fast, and modern developer portfolio built with **React** and **Tailw
 
 - **Framework**: React.js
 - **Styling**: Tailwind CSS
-- **Icons / Assets**: Lucide React 
+- **Icons / Assets**: Lucide React
 - **Deployment**: Vercel
 
 ---
