@@ -16,7 +16,6 @@ export default function Navbar() {
         Kuldeep Patidar
       </a>
       <div className="space-x-6 flex items-center">
-        <button>Change mode</button>
         <a href="#about" className="hover:text-slate-900 transition-colors">About</a>
         <a href="#experience" className="hover:text-slate-900 transition-colors">Experience</a>
         <a href="#projects" className="hover:text-slate-900 transition-colors">Projects</a>

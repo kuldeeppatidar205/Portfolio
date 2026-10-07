@@ -21,7 +21,7 @@ export default function Hero() {
             Get in touch
           </a>
           <a 
-            href="src\data\Kuldeep patidar resume.pdf" 
+            href="public\Kuldeep patidar resume.pdf" 
             target="_blank" 
             rel="noopener noreferrer"
             className="px-5 py-2.5 border border-slate-300 text-slate-700 text-sm font-medium rounded-md hover:bg-slate-100 transition-colors"
