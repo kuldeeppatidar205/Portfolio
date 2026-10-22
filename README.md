@@ -3,30 +3,21 @@
 > A lightweight, responsive personal portfolio web application built with **React 19** and **Tailwind CSS v4** to showcase featured engineering projects, professional experience, and direct contact channels.
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Site-2563EB?style=for-the-badge&logo=vercel&logoColor=white)](https://kuldeep-patidar.vercel.app/)  
-🔗 **Live URL:** [https://kuldeep-patidar.vercel.app/](https://kuldeep-patidar.vercel.app/) *(Placeholder: Replace with your active custom Vercel / Netlify production URL)*  
+🔗 **Live URL:** [https://kuldeep-patidar.vercel.app/](https://kuldeep-patidar.vercel.app/) 
 📂 **Source Code:** [https://github.com/kuldeeppatidar205/portfolio](https://github.com/kuldeeppatidar205/portfolio)
 
 ---
 
 ## 📸 Screenshots (Real Data Previews)
 
-> *Place actual application screenshots inside a `docs/screenshots/` or `public/` directory and update the image paths below.*
-
 ### 1. Hero & About Overview
 Captures the initial landing fold featuring developer positioning, direct resume CTA, and quick section anchors.
 
-![Hero and About Section](./public/Screenshot (258).png)  
-![Hero and About Section](./public/Screenshot (259).png)  
-*Placeholder: Hero fold displaying name "Kuldeep Patidar", "Software Developer" title, bio summary, and "View Resume" / "Get in touch" buttons.*
+![Hero and About Section](./public/Screenshot%20(258).png)
+!(./public/Screenshot%20(259).png)
 
 ---
 
-### 2. Selected Projects & Experience Grid
-Displays data-driven project cards (e.g., Verisite, AgriNode) with dynamic tech tags and direct outbound project links.
-
-*Placeholder: Grid cards showing "Verisite — Student Housing Marketplace" and "AgriNode — Crop Price Tracker" with tag badges and external routing.*
-
----
 
 ## 🛠️ Accurate Tech Stack
 
@@ -111,7 +102,6 @@ npm run lint
 
 ## ⚠️ Honest Limitations
 
-- **Desktop-Only Top Navigation**: The top navbar links are hidden on mobile viewports (`hidden md:flex`) to preserve clean vertical screen space and prevent horizontal overflow; mobile navigation relies on smooth continuous vertical scrolling.
 - **Client-Side `mailto:` Only**: The contact action relies entirely on the client machine having a configured default email handler; there is no backend API or serverless contact form submission (e.g., Nodemailer, Resend, Formspree).
 - **Static In-Memory Data**: Content is loaded from a local JavaScript file (`portfolioData.js`). Updating content requires a code commit and redeployment rather than fetching from a Headless CMS or API.
 - **Static Background Palette**: The root layout in `App.jsx` enforces a fixed `bg-gray-300` background and does not adapt dynamically to system color scheme preferences (`prefers-color-scheme`).
@@ -125,7 +115,9 @@ npm run lint
 portfolio/
 ├── public/
 │   ├── favicon.svg                   # Browser favicon (placeholder)
-│   └── Kuldeep patidar resume.pdf    # Downloadable resume document
+│   ├── Kuldeep patidar resume.pdf    # Downloadable resume document
+│   ├── Screenshot (258).png          # Hero & About overview screenshot
+│   └── Screenshot (259).png          # Selected Projects & Experience screenshot
 ├── src/
 │   ├── components/
 │   │   ├── Experience.jsx            # Experience section wrapper
@@ -146,40 +138,6 @@ portfolio/
 ├── package.json                      # Project dependencies and script runner
 └── vite.config.js                    # Vite configuration with Tailwind plugin
 ```
-
----
-
-## 🔧 Customization Guide
-
-### Updating Projects & Experience
-Edit [`src/data/portfolioData.js`](./src/data/portfolioData.js) to add or modify items:
-```javascript
-export const PROJECTS = [
-  {
-    id: 1,
-    year: "2026",
-    title: "Your Project Title",
-    description: "Detailed description of problem, solution, and impact.",
-    techStack: ["React", "Node.js", "PostgreSQL"],
-    link: "https://your-project-link.com"
-  }
-];
-```
-
-### Updating Your Resume
-Replace [`public/Kuldeep patidar resume.pdf`](./public/Kuldeep%20patidar%20resume.pdf) with your updated PDF using the identical filename, or update the reference path in [`src/components/Hero.jsx`](./src/components/Hero.jsx#L24).
-
----
-
-## 🚀 Deployment
-
-### Deploy to Vercel (Recommended)
-1. Push your code to your GitHub repository.
-2. Visit [Vercel](https://vercel.com/) and click **"Add New Project"**.
-3. Import your `portfolio` repository.
-4. Framework Preset will auto-detect **Vite**.
-5. Keep default settings (`Build Command: vite build`, `Output Directory: dist`).
-6. Click **Deploy**.
 
 ---
 
