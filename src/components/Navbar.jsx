@@ -1,14 +1,6 @@
-import React, { useState } from 'react';
-
 export default function Navbar() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
-
-  const handleModeToggle = () => {
-    setIsDarkMode((prev) => !prev);
-  };
-
   return (
-    <nav className="max-w-4xl mx-auto px-6 py-8 flex justify-between items-center text-sm font-medium text-slate-500">
+    <nav className="hidden md:flex max-w-4xl mx-auto px-6 py-8 justify-between items-center text-sm font-medium text-slate-500">
       <a 
         href="#" 
         className="text-slate-900 text-3xl font-semibold tracking-tight hover:opacity-75 transition-opacity"

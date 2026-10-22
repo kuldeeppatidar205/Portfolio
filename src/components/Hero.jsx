@@ -1,19 +1,17 @@
-import React from 'react';
-
 export default function Hero() {
   return (
-    <section id="about" className="max-w-4xl mx-auto px-6 pt-16 pb-24">
+    <section id="about" className="w-full max-w-4xl mx-auto px-6 pt-12 md:pt-16 pb-20 md:pb-24">
       <div className="max-w-2xl space-y-6">
-        <span className="text-xs font-semibold uppercase tracking-widest text-slate-600">
-          Portfolio
+        <span className="text-xs font-semibold uppercase tracking-widest text-slate-600 block">
+          Kuldeep Patidar · Portfolio
         </span>
         <h1 className="text-4xl sm:text-5xl font-light text-slate-900 tracking-tight leading-tight">
-           Software Developer
+          Software Developer
         </h1>
         <p className="text-lg text-slate-600 font-light leading-relaxed">
           I design and build clean, functional digital experiences. Currently focusing on scalable system design, web performance, or user research.
         </p>
-        <div className="pt-4 flex items-center space-x-4">
+        <div className="pt-4 flex flex-wrap items-center gap-3 sm:gap-4">
           <a 
             href="#contact" 
             className="px-5 py-2.5 bg-slate-900 text-slate-50 text-sm font-medium rounded-md hover:bg-slate-800 transition-colors"

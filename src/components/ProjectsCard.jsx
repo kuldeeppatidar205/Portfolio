@@ -1,8 +1,6 @@
-import React from 'react';
-
 export default function ProjectCard({ year, title, description, techStack = [], link }) {
   return (
-    <div className="group border border-slate-200 rounded-lg p-6 hover:border-slate-300 transition-all bg-white/50 flex flex-col justify-between">
+    <div className="w-full group border border-slate-200 rounded-lg p-6 hover:border-slate-300 transition-all bg-white/50 flex flex-col justify-between break-words overflow-hidden">
       <div>
         <div className="text-xs text-slate-400 font-mono mb-2">{year}</div>
         <h3 className="text-lg font-medium text-slate-900 group-hover:text-slate-600 transition-colors mb-2">
@@ -28,8 +26,8 @@ export default function ProjectCard({ year, title, description, techStack = [], 
 
         <a
           href={link}
-            target="_blank" 
-            rel="noopener noreferrer"
+          target="_blank" 
+          rel="noopener noreferrer"
           className="text-xs font-semibold text-slate-900 underline underline-offset-4 hover:text-slate-600 inline-block"
         >
           View Project →
