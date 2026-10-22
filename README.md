@@ -14,7 +14,7 @@
 Captures the initial landing fold featuring developer positioning, direct resume CTA, and quick section anchors.
 
 ![Hero and About Section](./public/Screenshot%20(258).png)
-!(./public/Screenshot%20(259).png)
+![More Screenshots](./public/Screenshot%20(259).png)
 
 ---
 
