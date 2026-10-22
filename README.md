@@ -15,7 +15,8 @@
 ### 1. Hero & About Overview
 Captures the initial landing fold featuring developer positioning, direct resume CTA, and quick section anchors.
 
-![Hero and About Section](./docs/screenshots/hero-section.png)  
+![Hero and About Section](./public/Screenshot (258).png)  
+![Hero and About Section](./public/Screenshot (259).png)  
 *Placeholder: Hero fold displaying name "Kuldeep Patidar", "Software Developer" title, bio summary, and "View Resume" / "Get in touch" buttons.*
 
 ---
@@ -23,7 +24,6 @@ Captures the initial landing fold featuring developer positioning, direct resume
 ### 2. Selected Projects & Experience Grid
 Displays data-driven project cards (e.g., Verisite, AgriNode) with dynamic tech tags and direct outbound project links.
 
-![Projects Showcase Section](./docs/screenshots/projects-showcase.png)  
 *Placeholder: Grid cards showing "Verisite — Student Housing Marketplace" and "AgriNode — Crop Price Tracker" with tag badges and external routing.*
 
 ---
@@ -106,22 +106,6 @@ Runs a local static web server serving the compiled `dist/` bundle to test perfo
 ```bash
 npm run lint
 ```
-
----
-
-## 🔍 Every Claim Audited
-
-To maintain absolute transparency, here is a line-by-line audit comparing codebase reality versus common documentation claims:
-
-| Feature / Claim | Status | Codebase Evidence & Verification |
-| :--- | :---: | :--- |
-| **React 19 Compatibility** | ✅ Verified | `package.json` specifies `"react": "^19.2.8"`. Successfully compiles with Vite. |
-| **Tailwind CSS v4** | ✅ Verified | Uses `@tailwindcss/vite` (`^4.3.3`) in `vite.config.js` and `@import "tailwindcss";` in `src/index.css`. No legacy `tailwind.config.js` required. |
-| **No External Icon Library** | ✅ Verified | No `lucide-react` or `react-icons` package exists in `dependencies`. UI relies on typography, Unicode symbols, and CSS styling. |
-| **Data Separation** | ✅ Verified | Projects and experiences are decoupled from components into [`src/data/portfolioData.js`](./src/data/portfolioData.js). |
-| **Resume Asset Present** | ✅ Verified | [`public/Kuldeep patidar resume.pdf`](./public/Kuldeep%20patidar%20resume.pdf) is physically present on disk (307 KB) and referenced in `Hero.jsx`. |
-| **Mobile-First Responsive Layout** | ✅ Verified | Fixed viewport overflow constraints (`overflow-x: hidden`, `max-w-100vw`). Desktop navigation bar is cleanly removed on mobile screens (`hidden md:flex`). |
-| **Code Linting** | ✅ Verified | `npm run lint` runs ESLint v10 with zero warnings and zero errors across all components. |
 
 ---
 
